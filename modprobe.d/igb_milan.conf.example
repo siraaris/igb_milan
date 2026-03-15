@@ -1,0 +1,8 @@
+# Prefer the custom Milan-tuned igb module over the stock Intel igb module.
+blacklist igb
+
+# These are the runtime knobs that matched the stable lab baseline.
+options igb_milan disable_tx_latency_adjust=Y disable_rx_latency_adjust=Y
+
+# Optional: uncomment if you want to keep the RX VLAN filter disabled too.
+# options igb_milan disable_tx_latency_adjust=Y disable_rx_latency_adjust=Y disable_vlan_filter=Y
