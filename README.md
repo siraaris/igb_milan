@@ -13,6 +13,31 @@ proved useful in this lab:
 The project builds a separate module, `igb_milan.ko`, so it can coexist with
 the stock `igb` source tree and be managed independently through DKMS.
 
+## Licensing and Copyright
+
+The `driver/` subtree was imported from the Linux kernel source package on this
+host:
+
+- `/usr/src/linux-source-6.12/drivers/net/ethernet/intel/igb`
+
+Those imported files retain the upstream SPDX identifiers and copyright
+notices from the kernel source.
+
+The main notices currently present in this import are:
+
+- most driver sources and headers:
+  - `SPDX-License-Identifier: GPL-2.0`
+  - `Copyright(c) 2007 - 2018 Intel Corporation.`
+- `driver/Makefile`:
+  - `SPDX-License-Identifier: GPL-2.0`
+  - `Copyright(c) 1999 - 2018 Intel Corporation.`
+- `driver/igb_ptp.c`:
+  - `SPDX-License-Identifier: GPL-2.0+`
+  - `Copyright (C) 2011 Richard Cochran <richardcochran@gmail.com>`
+
+See [COPYRIGHT.md](COPYRIGHT.md) for the attribution summary added for this
+repo.
+
 ## Layout
 
 - `driver/`
